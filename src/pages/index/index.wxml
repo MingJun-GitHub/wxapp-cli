@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<import src="../../wxml/motto/motto.wxml"/>
+<wxs src="../../wxs/powered.wxs" module="powered" />
+
+<view class="container">
+  <view bindtap="bindViewTap">
+    <user avatarUrl="{{userInfo.avatarUrl}}" nickName="{{userInfo.nickName}}"></user>
+  </view>
+  <view class="motto">
+    <template is="motto" data="{{motto:motto}}" />
+  </view>
+  <view class="gouser">
+     <text bindtap="gousercenter">前往个人中心</text>
+  </view>
+  <view class="powered">
+    <text>{{powered.by}}</text>
+  </view>
+</view>
